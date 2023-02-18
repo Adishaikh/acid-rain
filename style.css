@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0b2429;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+    position: relative;
+  
+    background: #998235;
+    border-radius: 80px 0px 80px 80px;
+  }
+  .circle:before
+   {
+    content: "";
+    position: absolute;
+  
+    left: 60px;
+    bottom: 60px;
+    width: 120px;
+    height: 120px;
+  
+    background: #f3ac3c;
+    border-radius: 50%;
+
+    z-index: -1;
+  }
+  .circle:after{
+    content: '';
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+    
+
+    right: 60px;
+    top: 60px;
+    
+    background: #f6ac34;
+    border-radius: 80px 0px 80px 80px;
+  }
+  
+  
